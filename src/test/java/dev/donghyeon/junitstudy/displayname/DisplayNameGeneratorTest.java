@@ -1,4 +1,4 @@
-package dev.donghyeon.junitstudy;
+package dev.donghyeon.junitstudy.displayname;
 
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -26,12 +26,12 @@ public class DisplayNameGeneratorTest {
     class X년은_윤년이다 {
 
         @Test
-        void if_it_is_divisible_by_4_but_not_by_100() {
+        void 윤년_4로_나눌순있지만_100으론_나누지못한다() {
         }
 
         @ParameterizedTest(name = "{0} 년은 윤년이다.")
         @ValueSource(ints = {2016, 2020, 2048})
-        void if_it_is_one_of_the_following_years(int year) {
+        void 다음의_값들은_윤년이다(int year) {
         }
 
     }

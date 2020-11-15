@@ -1,4 +1,4 @@
-package dev.donghyeon.junitstudy;
+package dev.donghyeon.junitstudy.displayname;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
