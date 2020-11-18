@@ -21,17 +21,5 @@ public class CustomConditionalTest {
     boolean customCondition() {
         return true;
     }
-
-    @Test
-    @EnabledIf("outsideMethod")
-    void enabledByOutsideMethod() {
-
-    }
 }
 
-class OutsideClass {
-
-    boolean outsideMethod() {
-        return true;
-    }
-}
