@@ -26,8 +26,8 @@ class AssertionsTest {
 
     @Test
     void groupedAssertions() {
-        assertAll("person",
-                () -> assertEquals("Jane", person.getFirstName()),
+        assertAll("person assertion",
+                () -> assertEquals("동현", person.getFirstName()),
                 () -> assertEquals("Doe", person.getLastName()));
     }
 
