@@ -6,7 +6,7 @@ import org.junit.jupiter.api.condition.EnabledIf;
 
 public class CustomConditionalTest {
     @Test
-    @EnabledIf("customCondition")
+    @EnabledIf("eCustomCondition")
     void enabled() {
 
 
@@ -21,5 +21,15 @@ public class CustomConditionalTest {
     boolean customCondition() {
         return true;
     }
+
+
+
 }
+class ExternalClass {
+
+     static boolean eCustomCondition() {
+        return true;
+    }
+}
+
 
