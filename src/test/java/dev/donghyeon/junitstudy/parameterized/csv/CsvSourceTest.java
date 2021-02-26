@@ -7,7 +7,7 @@ import org.junit.jupiter.params.provider.CsvSource;
 import static org.junit.jupiter.api.Assertions.assertNotEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
-public class CsvTest {
+public class CsvSourceTest {
     @ParameterizedTest
     @CsvSource({
             "apple, 1",
