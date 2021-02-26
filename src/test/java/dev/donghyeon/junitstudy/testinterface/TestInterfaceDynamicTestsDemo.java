@@ -1,4 +1,4 @@
-package dev.donghyeon.junitstudy.lifecycle;
+package dev.donghyeon.junitstudy.testinterface;
 
 import org.junit.jupiter.api.DynamicTest;
 import org.junit.jupiter.api.TestFactory;

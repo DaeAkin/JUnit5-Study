@@ -1,4 +1,4 @@
-package dev.donghyeon.junitstudy.lifecycle;
+package dev.donghyeon.junitstudy.testinterface;
 
 import org.junit.jupiter.api.*;
 
@@ -10,7 +10,7 @@ interface TestLifecycleLogger {
     static final Logger logger = Logger.getLogger(TestLifecycleLogger.class.getName());
 
     @BeforeAll
-    default void beforeAllTests() {
+    static void beforeAllTests() {
         logger.info("Before all tests");
     }
 

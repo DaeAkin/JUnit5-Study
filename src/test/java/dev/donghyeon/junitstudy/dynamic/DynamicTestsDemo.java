@@ -150,7 +150,7 @@ class DynamicTestsDemo {
     }
 
     @TestFactory
-    DynamicNode dynamicNodeSingleContainer() {
+    DynamicNode dynamicNodeSingleCoChronoUnitntainer() {
         return dynamicContainer("palindromes",
                 Stream.of("racecar", "radar", "mom", "dad")
                         .map(text -> dynamicTest(text, () -> assertTrue(isPalindrome(text)))
