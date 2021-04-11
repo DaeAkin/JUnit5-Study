@@ -13,6 +13,8 @@ repositories {
 }
 
 dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-webflux'
+
     implementation 'org.springframework.boot:spring-boot-starter'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 
@@ -23,8 +25,12 @@ dependencies {
     testAnnotationProcessor 'org.projectlombok:lombok:1.18.16'
 
     testImplementation 'org.hamcrest:hamcrest:2.2'
+
+    implementation 'org.slf4j:jul-to-slf4j:1.7.22'
+    implementation 'ch.qos.logback:logback-classic:1.1.8'
 }
 
 test {
+//    systemProperty 'java.util.logging.manager', 'org.apache.logging.log4j.jul.LogManager'
     useJUnitPlatform()
 }
